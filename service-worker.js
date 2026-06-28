@@ -6,7 +6,8 @@
 
 const CACHE_NAME = 'prompt-cache-v1';
 const ASSETS = [
-    '/',
+    './',
+    '/404.html',
     '/index.html',
     '/css/reset.css',
     '/css/variables.css',
