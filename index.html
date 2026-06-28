@@ -319,8 +319,7 @@
                     <form id="captureForm" action="https://api.staticforms.dev/submit" method="POST" novalidate>
                         <input type="hidden" name="apiKey" value="sf_b28b453bf885be88f89f8e34" />
                         <input type="hidden" name="subject" value="Novo lead - PROMPT" />
-                        <input type="hidden" name="redirectTo" value="https://marconearruda.com.br/obrigado" />
-
+                        
                         <div class="form-group">
                             <label for="formName">Seu nome</label>
                             <input type="text" id="formName" name="name" placeholder="Digite seu nome" required />
@@ -363,14 +362,14 @@
                 </ul>
             </nav>
             <div class="footer__social">
-    <a href="https://www.instagram.com/marconearruda.autor/#" target="_blank" rel="noopener" aria-label="Instagram">
-        <img src="assets/icons/instagram.svg" alt="Instagram" width="24" height="24" loading="lazy" />
-    </a>
-    <a href="https://wa.link/zy3h8a" target="_blank" rel="noopener" aria-label="WhatsApp">
-        <img src="assets/icons/whatsapp.svg" alt="WhatsApp" width="24" height="24" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
-        <span class="social-fallback" style="display:none; font-size:24px;">📱</span>
-    </a>
-</div>
+               <a href="https://www.instagram.com/marconearruda.autor/#" target="_blank" rel="noopener" aria-label="Instagram">
+                 <img src="assets/icons/instagram.svg" alt="Instagram" width="28" height="28" loading="lazy" />
+                </a>
+                <a href="https://wa.link/zy3h8a" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <img src="assets/icons/whatsapp.svg" alt="WhatsApp" width="28" height="28" loading="lazy" />
+                </a>
+            </div>
+        </div>
     </footer>
 
     <!-- ============================================================
@@ -384,10 +383,11 @@
 
     <!-- Service Worker -->
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(() => console.log('Service Worker registrado com sucesso.'));
-        }
-    </script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/ebook-prompt/service-worker.js')
+            .then(() => console.log('Service Worker registrado.'))
+            .catch(err => console.warn('Service Worker não registrado:', err));
+    }
+</script>
 </body>
 </html>
