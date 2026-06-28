@@ -1,0 +1,100 @@
+/* ============================================================
+   ANIMAÇÕES — KEYFRAMES, REVEAL, SCROLL
+   ============================================================ */
+
+/* --- Reveal (Intersection Observer) --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal--left {
+    transform: translateX(-40px);
+}
+.reveal--left.visible {
+    transform: translateX(0);
+}
+.reveal--right {
+    transform: translateX(40px);
+}
+.reveal--right.visible {
+    transform: translateX(0);
+}
+.reveal--scale {
+    transform: scale(0.95);
+}
+.reveal--scale.visible {
+    transform: scale(1);
+}
+.reveal--delay-1 { transition-delay: 0.1s; }
+.reveal--delay-2 { transition-delay: 0.2s; }
+.reveal--delay-3 { transition-delay: 0.3s; }
+.reveal--delay-4 { transition-delay: 0.4s; }
+
+/* --- Typing (JS controlado) --- */
+@keyframes blinkCursor {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: var(--color-primary); }
+}
+
+/* --- Floating (para mockup, badges, etc) --- */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+}
+.float-animation {
+    animation: float 5s ease-in-out infinite;
+}
+
+/* --- Glow pulsante (já no mockup) --- */
+@keyframes glowPulse {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+/* --- Shimmer (para skeletons ou destaques) --- */
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+.shimmer {
+    background: linear-gradient(90deg, var(--color-dark-card) 25%, var(--color-dark-surface) 50%, var(--color-dark-card) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* --- Fade In (genérico) --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+/* --- Slide In --- */
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.slide-in-up {
+    animation: slideInUp 0.6s ease forwards;
+}
+
+/* --- Rotação sutil (ícones, engrenagens) --- */
+@keyframes spinSlow {
+    to { transform: rotate(360deg); }
+}
+.spin-slow {
+    animation: spinSlow 12s linear infinite;
+}
+
+/* --- Particle drift (já no hero) --- */
+@keyframes particlesDrift {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100px, -100px); }
+}

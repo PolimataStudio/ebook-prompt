@@ -1,0 +1,99 @@
+/* ============================================================
+   VARIÁVEIS — DESIGN SYSTEM
+   ============================================================ */
+:root {
+    /* --- Cores --- */
+    --color-primary: #00d4ff;
+    --color-primary-dark: #0099cc;
+    --color-primary-glow: rgba(0, 212, 255, 0.3);
+
+    --color-secondary: #7b2fbe;
+    --color-secondary-dark: #5a1f8a;
+    --color-secondary-glow: rgba(123, 47, 190, 0.3);
+
+    --color-dark: #0b0e14;
+    --color-dark-surface: #131a24;
+    --color-dark-card: #1a2330;
+
+    --color-light: #f0f4f8;
+    --color-light-muted: #c8d6e0;
+
+    --color-muted: #a0b4c8;
+    --color-muted-dark: #6a7f94;
+
+    --color-border: rgba(255, 255, 255, 0.06);
+    --color-border-strong: rgba(0, 212, 255, 0.15);
+
+    --color-success: #00e676;
+    --color-warning: #ffd740;
+    --color-danger: #ff5252;
+
+    /* --- Tipografia --- */
+    --font-heading: 'Orbitron', 'Inter', sans-serif;
+    --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    --font-mono: 'Space Mono', 'Fira Code', monospace;
+
+    --font-size-base: 1rem;        /* 16px */
+    --font-size-sm: 0.875rem;      /* 14px */
+    --font-size-xs: 0.75rem;       /* 12px */
+    --font-size-lg: 1.125rem;      /* 18px */
+    --font-size-xl: 1.25rem;       /* 20px */
+    --font-size-2xl: 1.5rem;       /* 24px */
+    --font-size-3xl: 2rem;         /* 32px */
+    --font-size-4xl: 2.5rem;       /* 40px */
+    --font-size-5xl: 3.25rem;      /* 52px */
+    --font-size-6xl: 4.5rem;       /* 72px */
+
+    --line-height-tight: 1.1;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.7;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    /* --- Espaçamento --- */
+    --space-xs: 0.25rem;   /* 4px */
+    --space-sm: 0.5rem;    /* 8px */
+    --space-md: 0.75rem;   /* 12px */
+    --space-base: 1rem;    /* 16px */
+    --space-lg: 1.5rem;    /* 24px */
+    --space-xl: 2rem;      /* 32px */
+    --space-2xl: 3rem;     /* 48px */
+    --space-3xl: 4rem;     /* 64px */
+    --space-4xl: 6rem;     /* 96px */
+    --space-5xl: 8rem;     /* 128px */
+
+    /* --- Container --- */
+    --container-max: 1200px;
+    --container-padding: 1.5rem;
+
+    /* --- Bordas --- */
+    --radius-sm: 4px;
+    --radius-md: 10px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+    --radius-full: 9999px;
+
+    /* --- Sombras --- */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 40px var(--color-primary-glow);
+    --shadow-glow-secondary: 0 0 40px var(--color-secondary-glow);
+
+    /* --- Transições --- */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* --- Z-index --- */
+    --z-header: 1000;
+    --z-overlay: 100;
+    --z-modal: 2000;
+    --z-toast: 3000;
+}
